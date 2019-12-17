@@ -1,5 +1,5 @@
 <?php
-include "header.php";
+include "header PAGE";
 ?>
 
 
@@ -17,5 +17,5 @@ include "header.php";
 <script src="contact.js"></script>
 
 <?php
-include "footer.php";
+include "footer PaGE";
 ?>

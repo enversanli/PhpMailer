@@ -20,16 +20,16 @@ try {
     $mail->isSMTP();
     $mail->Host       = 'smtp.gmail.com';
     $mail->SMTPAuth   = true;
-    $mail->Username   = 'sanlisoftware@gmail.com';
-    $mail->Password   = 'yazilimlondon#';
+    $mail->Username   = 'üzerinden-islem-yapilacak@mail.com';
+    $mail->Password   = 'sifresi';
     $mail->SMTPSecure = 'tls';
     $mail->Port       = 587;
     $mail->CharSet    = 'UTF-8';
     //Recipients
 
-    $mail->setFrom('sanlisoftware@gmail.com');
-    $mail->addAddress('ensanli58@gmail.com');
-    $mail->addReplyTo('en.sanli@hotmail.com');
+    $mail->setFrom('mailiniz');
+    $mail->addAddress('mailin-iletilecegi@mail.com');
+    $mail->addReplyTo('cevap-verilecebilecek@mail.com');
 
 
 

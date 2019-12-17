@@ -20,16 +20,16 @@ try {
     $mail->isSMTP();
     $mail->Host       = 'smtp.gmail.com';
     $mail->SMTPAuth   = true;
-    $mail->Username   = 'üzerinden-islem-yapilacak@mail.com';
-    $mail->Password   = 'sifresi';
+    $mail->Username   = 'üzerinden-gönderilecek-yapilacak@mail.com'; // maili göndermek için kullanılacak olan mail
+    $mail->Password   = 'sifresi';  //maili göndermek için kullanılacak olan mailin ŞİFRESi
     $mail->SMTPSecure = 'tls';
     $mail->Port       = 587;
     $mail->CharSet    = 'UTF-8';
     //Recipients
 
-    $mail->setFrom('mailiniz');
-    $mail->addAddress('mailin-iletilecegi@mail.com');
-    $mail->addReplyTo('cevap-verilecebilecek@mail.com');
+    $mail->setFrom('üstte-belirttiginiz@mailiniz.com'); // maili göndermek için kullanılacak olan mail
+    $mail->addAddress('mailin-iletilecegi@mail.com'); // Gönderilcek mail hani mail adresine iletileceği
+    $mail->addReplyTo('cevap-verilecebilecek@mail.com'); //$senderMail değişkeni üzerindeki maile yönlendirilebilir.
 
 
 
